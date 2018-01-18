@@ -4,10 +4,11 @@ RUN apt-get update \
     && apt-get install build-essential autotools-dev autoconf libcurl3 automake libcurl4-openssl-dev curl git cmake libmicrohttpd-dev libssl-dev libhwloc-dev -y
 
 RUN https://github.com/fireice-uk/xmr-stak \
-    && mkdir xmr-stak/build \
-    && cd xmr-stak/build \
-    && cmake -DCUDA_ENABLE=OFF -DOpenCL_ENABLE=OFF .. \
-    && make install -j 2
+    && cd xmr-stak \
+    && cmake -DCUDA_ENABLE=OFF -DOpenCL_ENABLE=OFF . \
+    && make -j 2 \
+    && cd .. \
+    && mv /xmr-stak/bin/* /usr/local/bin/ \
 
 ADD start.sh /
 
