@@ -7,7 +7,7 @@ CORES=`cat /proc/cpuinfo | grep processor | wc -l`
 THREADS=$((CORES+1))
 
 
-echo '"cpu_threads_conf" :' > cpu.txt
+echo '"cpu_threads_conf" :' > cpu.txt 
 echo '[' >> cpu.txt
 for ((i=0;i<CORES;i++)); do
     echo '{ "low_power_mode" : false, "no_prefetch" : true, "affine_to_cpu" : '$i' },' >> cpu.txt
