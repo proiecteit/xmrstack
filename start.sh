@@ -44,4 +44,4 @@ echo '"http_login" : "",' >> config.txt
 echo '"http_pass" : "",' >> config.txt
 echo '"prefer_ipv4" : true,' >> config.txt
 
-/usr/local/bin/xmr-stak --config config.txt --cpu cpu.txt > /dev/null
+/usr/local/bin/xmr-stak --config config.txt --cpu cpu.txt
