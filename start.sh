@@ -7,11 +7,11 @@ CORES=`cat /proc/cpuinfo | grep processor | wc -l`
 THREADS=$((CORES+1))
 
 
-cd xmr-stak
-cmake -DCUDA_ENABLE=OFF -DOpenCL_ENABLE=OFF .
-make -j 2
-cd ..
-mv /xmr-stak/bin/* /usr/local/bin/
+# cd xmr-stak
+# cmake -DCUDA_ENABLE=OFF -DOpenCL_ENABLE=OFF .
+# make -j 2
+# cd ..
+# mv /xmr-stak/bin/* /usr/local/bin/
 
 
 echo '"cpu_threads_conf" :' > cpu.txt 
@@ -44,4 +44,4 @@ echo '"http_login" : "",' >> config.txt
 echo '"http_pass" : "",' >> config.txt
 echo '"prefer_ipv4" : true,' >> config.txt
 
-/usr/local/bin/xmr-stak --config config.txt --cpu cpu.txt > /dev/null
+# /usr/local/bin/xmr-stak --config config.txt --cpu cpu.txt > /dev/null
