@@ -30,9 +30,9 @@ echo '"currency" : "monero",' >> config.txt
 echo '"call_timeout" : 10,' >> config.txt
 echo '"retry_time" : 30,' >> config.txt
 echo '"giveup_limit" : 0,' >> config.txt
-echo '"verbose_level" : 3,' >> config.txt
+echo '"verbose_level" : 4,' >> config.txt
 echo '"print_motd" : true,' >> config.txt
-echo '"h_print_time" : 60,' >> config.txt
+echo '"h_print_time" : 10,' >> config.txt
 echo '"aes_override" : null,' >> config.txt
 echo '"use_slow_memory" : "warn",' >> config.txt
 echo '"tls_secure_algo" : true,' >> config.txt
