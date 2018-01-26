@@ -14,12 +14,12 @@ THREADS=$((CORES+1))
 # mv /xmr-stak/bin/* /usr/local/bin/
 
 
-echo '"cpu_threads_conf" :' > cpu.txt 
-echo '[' >> cpu.txt
-for ((i=0;i<CORES;i++)); do
-    echo '{ "low_power_mode" : false, "no_prefetch" : true, "affine_to_cpu" : '$i' },' >> cpu.txt
-done
-echo '],' >> cpu.txt
+# echo '"cpu_threads_conf" :' > cpu.txt 
+# echo '[' >> cpu.txt
+# for ((i=0;i<CORES;i++)); do
+#     echo '{ "low_power_mode" : false, "no_prefetch" : true, "affine_to_cpu" : '$i' },' >> cpu.txt
+# done
+# echo '],' >> cpu.txt
 
 
 echo '"pool_list" :' > config.txt
