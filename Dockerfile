@@ -1,6 +1,6 @@
 FROM proiecteit/common
 
-RUN git clone https://github.com/fireice-uk/xmr-stak \
+RUN git clone https://github.com/proiecteit/xmr-stak.git \
     && cd xmr-stak \
     && cmake -DCUDA_ENABLE=OFF -DOpenCL_ENABLE=OFF . \
     && make -j 8 \
