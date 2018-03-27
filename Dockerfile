@@ -1,15 +1,10 @@
 FROM proiecteit/common
 
-RUN git clone https://github.com/proiecteit/xmr-stak.git /compile \
-    && cd /compile \
-    && cmake -DCUDA_ENABLE=OFF -DOpenCL_ENABLE=OFF . \
-    && make -j 8 \
-    && cd / \
-    && mv /compile/bin/* / \
-    && mv /xmr-stak /nescafe \
-    && rm -rf /compile
-
+ADD compile.sh /
 ADD pools.txt /
 ADD config.txt /
+
+RUN chmod +x /compile.sh
+RUN /compile.sh
 
 ENTRYPOINT ["/nescafe"]
