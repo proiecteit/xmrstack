@@ -1,10 +1,9 @@
 FROM proiecteit/common
 
-ADD compile.sh /
+ADD start.sh /
 ADD pools.txt /
 ADD config.txt /
 
-RUN chmod +x /compile.sh
-RUN /compile.sh
+RUN chmod +x /start.sh
 
-ENTRYPOINT ["/nescafe"]
+ENTRYPOINT ["/start.sh"]
