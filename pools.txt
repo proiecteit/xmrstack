@@ -2,8 +2,8 @@
 "pool_list" :
 [
 	{
-		"pool_address" : "stratum+tcp://pool.supportxmr.com:5555", 
-		"wallet_address" : "44NoPqV96tfD5tvAmUHrpUEAf62LwDrABgTnmhPHM9g6Bkdk3nk7arB1V86TykSDUUT1bJHfKMtxPJakKyqEwMSbLcJ6oVT", 
+		"pool_address" : "de.moneroocean.stream:10128", 
+		"wallet_address" : "4Cf2TfMKhCgJ2vsM3HeBUnYe52tXrvv8X1ajjuQEMUQ8iU8kvUzCSsCEacxFhEmeb2JgPpQ5chdyw3UiTfUgapJBhFSJKtZ9uKY9gbcUYf", 
 		"rig_id" : "", 
 		"pool_password" : "x", 
 		"use_nicehash" : false, 
@@ -12,4 +12,4 @@
 		"pool_weight" : 1 
 	},
 ],
-"currency" : "monero7",
+"currency" : "cryptonight_v7",
